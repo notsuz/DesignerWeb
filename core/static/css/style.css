@@ -58,6 +58,10 @@
   margin-right: 15px;
 }
 
+.clean-color{
+    color: yellowgreen;
+}
+
 /* nav section css sticky */
 html {
   scroll-behavior: smooth;
@@ -102,3 +106,42 @@ body {
     background-color: #f8f9fa !important;
     color: #000000 !important;
   }
+
+
+  /* project section css */
+
+  /* Container for the image */
+.portfolio-card {
+    position: relative;
+    border-radius: 12px; /* Matches the rounded corners in image_a5b782.jpg */
+    overflow: hidden;    /* Clips the image to the border radius */
+    border: 1px solid #2E2E2E; /* Your Palette Border Color */
+    background-color: #1A1A1A; /* Secondary Background */
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    border-color: #7A7A7A; /* Highlight border on hover */
+}
+
+/* Forces images to be square and fit perfectly */
+.portfolio-card img {
+    width: 100%;
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
+    display: block;
+}
+
+/* The semi-transparent label seen in the second card of image_a5b782.jpg */
+.card-overlay-label {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: rgba(15, 15, 15, 0.7); /* Primary Black with transparency */
+    color: #FFFFFF;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    backdrop-filter: blur(4px); /* Adds a premium feel */
+}
