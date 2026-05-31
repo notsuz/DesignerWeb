@@ -1,0 +1,104 @@
+/* Premium Minimalist Typography */
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 850;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  color: #1a1a1a;
+}
+
+.text-outline-accent {
+  color: transparent;
+  -webkit-text-stroke: 1px #1a1a1a;
+  font-style: italic;
+}
+
+.skill-tag-minimal {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 6px 14px;
+  border: 1px solid #e0e0e0;
+  border-radius: 100px;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.skill-tag-minimal:hover {
+  border-color: #1a1a1a;
+  color: #1a1a1a;
+  background: #fcfcfc;
+}
+
+.specialty-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+  display: block;
+  text-transform: uppercase;
+}
+
+/* Framing Elements */
+.info-border-left {
+  border-left: 2px solid #1a1a1a;
+  padding-left: 1.5rem;
+}
+
+.seeking-box {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.adobe-icon {
+  font-size: 1.2rem;
+  color: #999;
+  margin-right: 15px;
+}
+
+/* nav section css sticky */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px; /* Prevents titles from hiding under your sticky social header */
+}
+
+body {
+  background-color: #f8f9fa; /* Matches bg-light */
+}
+
+/* 🎯 THE FIX: Forces the sidebar to stay fixed on desktop viewports */
+@media (min-width: 768px) {
+  .sticky-sidebar-desktop {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto; /* Allows the sidebar to scroll internally if items grow too long */
+  }
+}
+
+.scrollspy-wrapper {
+  position: relative;
+}
+
+
+ 
+#navbar-portfolio.nav-pills .nav-link.active {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+  /* 2. Ensure non-active links stay black (not blue text) */
+  #navbar-portfolio .nav-link {
+    color: #000000 !important;
+    white-space: normal; /* Prevents the text cutoff seen in your images */
+    line-height: 1.2;
+  }
+
+  /* 3. Subtle hover for a premium feel */
+  #navbar-portfolio .nav-link:hover:not(.active) {
+    background-color: #f8f9fa !important;
+    color: #000000 !important;
+  }
