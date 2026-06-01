@@ -197,7 +197,25 @@
 
                         <div id="item-4" class="mb-5 pt-2">
                             <h4 class="fw-bold fs-3 mb-3">Logo Design</h4>
-                            <p class="text-muted">Brand identity matrices and vector typography layouts...</p>
+                            <div class="container-fluid px-0">
+                                <div class="row g-4">
+                                    <!-- Card 1 -->
+                                    {% for i in logo %}
+
+
+                                    <div class="col-6 col-md-3">
+
+                                        <div class="portfolio-card text-center">
+                                            <span class="text-white">{{i.title}}</span>
+                                            <img src="{{ i.image.url }}" alt="Logo 1" class="img-fluid">
+                                            <span class="text-white">{{i.caption}}</span>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+
+                                </div>
+                            </div>
+                            
                         </div>
 
                         <hr class="my-5 opacity-25">
