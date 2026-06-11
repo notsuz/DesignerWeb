@@ -2,188 +2,203 @@
 {% load static %}
 
 {% block content %}
-  
 
 
-            
 
-                <div class="px-3 px-md-5 pb-5 flex-grow-1">
 
-                    <div data-bs-spy="scroll" data-bs-target="#navbar-portfolio" data-bs-smooth-scroll="true"
-                        class="scrollspy-wrapper" tabindex="0">
 
-                        <div id="item-1" class="mb-5">
-                            <!-- HOME SECTION START -->
-                            <section id="item-1" class=" mt-md-5">
-                                <div class="container-fluid px-md-5">
-                                    <div class="row g-5">
+<div class="px-3 px-md-5 pb-5 flex-grow-1">
 
-                                        <!-- LEFT: BIG TYPOGRAPHY & INTRO -->
-                                        <div class="col-lg-7">
-                                            <span class="studio-badge mb-3">Available for Projects</span>
-                                            <h1 class="hero-title mb-4">
-                                                CREATIVE <br>
-                                                <span class="text-outline-accent clean-color">CLEAN</span> <br>
-                                                VISUALS.
-                                            </h1>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-portfolio" data-bs-smooth-scroll="true" class="scrollspy-wrapper"
+        tabindex="0">
 
-                                            <div class="pe-lg-5">
-                                                <p class="lead-premium mb-4">
-                                                    Freelance Graphic Designer specializing in <span
-                                                        class="text-dark fw-bold">poster design, logo design, and
-                                                        branding</span>. I transform complex ideas into striking visual
-                                                    identities for social media and digital platforms.
-                                                </p>
+        <div id="item-1" class="mb-5">
+            <!-- HOME SECTION START -->
+            <section id="item-1" class=" mt-md-5">
+                <div class="container-fluid px-md-5">
+                    <div class="row g-5">
 
-                                                <!-- Skills Cloud -->
-                                                <div class="d-flex flex-wrap gap-2 mb-4">
-                                                    <span class="skill-tag-minimal">Brand Identity</span>
-                                                    <span class="skill-tag-minimal">Cover Design</span>
-                                                    <span class="skill-tag-minimal">Fashion Design</span>
-                                                    <span class="skill-tag-minimal">Logo Design</span>
-                                                    <span class="skill-tag-minimal">Poster Design</span>
-                                                    <span class="skill-tag-minimal">Thumbnails</span>
-                                                </div>
-                                            </div>
-                                        </div>
+                        <!-- LEFT: BIG TYPOGRAPHY & INTRO -->
+                        <div class="col-lg-7">
+                            <span class="studio-badge mb-3">Available for Projects</span>
+                            <h1 class="hero-title mb-4">
+                                CREATIVE <br>
+                                <span class="text-outline-accent clean-color">CLEAN</span> <br>
+                                VISUALS.
+                            </h1>
 
-                                        <!-- RIGHT: SPECIALTIES & STATUS -->
-                                        <div class="col-lg-5">
-                                            <div class="row g-4">
+                            <div class="pe-lg-5">
+                                <p class="lead-premium mb-4">
+                                    Hello!, I am Sajit Maharjan, a Freelance Graphic Designer specializing in <span
+                                        class="text-dark fw-bold">poster design, logo design, and
+                                        branding</span>. I transform complex ideas into striking visual
+                                    identities for social media and digital platforms.
+                                </p>
 
-                                                <!-- Top Specialties Section -->
-                                                <div class="col-12">
-                                                    <div class="info-border-left">
-                                                        <span class="specialty-label">Top Specialties</span>
-                                                        <ul class="list-unstyled fs-5 fw-light text-secondary">
-                                                            <li class="mb-2">Web Design</li>
-                                                            <li class="mb-2">Product Design</li>
-                                                            <li>Brand / Graphic Design</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-
-                                                <!-- Seeking / Status Section -->
-                                                <div class="col-12 mt-5">
-                                                    <div class="seeking-box shadow-lg">
-                                                        <span class="specialty-label text-white-50">Current
-                                                            Status</span>
-                                                        <h4 class="fw-bold mb-3">Seeking freelance or contract
-                                                            opportunities</h4>
-                                                        <a href="https://wa.me/9840031860"
-                                                            class="btn btn-outline-light btn-sm px-4 py-2 mt-2">
-                                                            Hire Me <i class="bi bi-arrow-up-right ms-2"></i>
-                                                        </a>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </section>
-                            <!-- HOME SECTION END -->
-
-                        </div>
-
-                        <hr class="my-5 opacity-25">
-
-                        <div id="item-2" class="mb-5 pt-2">
-                            <h4 class="fw-bold fs-3 mb-3">Projects</h4>
-                            <!-- PROJECT SECTION START -->
-                            <div class="container-fluid px-0">
-                                <div class="row g-4">
-                                    <!-- Card 1 -->
-                                    {% for i in project %}
-
-                                    <div class="col-6 col-md-3">
-                                            <a href="{% url 'project' i.id %}">
-
-                                            <div class="portfolio-card text-center">
-                                                <span class="text-white">{{i.title}}</span>
-                                                <img src="{{ i.image.url }}" alt="Logo 1" class="img-fluid">
-                                                <span class="text-white">{{i.caption}}</span>
-                                            </div>
-                                        </a>
-                                        </div>
-
-                                    {% endfor %}
-
+                                <!-- Skills Cloud -->
+                                <div class="d-flex flex-wrap gap-2 mb-4">
+                                    <span class="skill-tag-minimal">Brand Identity</span>
+                                    <span class="skill-tag-minimal">Cover Design</span>
+                                    <span class="skill-tag-minimal">Fashion Design</span>
+                                    <span class="skill-tag-minimal">Logo Design</span>
+                                    <span class="skill-tag-minimal">Poster Design</span>
+                                    <span class="skill-tag-minimal">Thumbnails</span>
                                 </div>
                             </div>
-
-                            <!-- PROJECT SECTION END -->
                         </div>
 
-                        <hr class="my-5 opacity-25">
+                        <!-- RIGHT: SPECIALTIES & STATUS -->
+                        <div class="col-lg-5">
+                            <div class="row g-4">
 
-                        <div id="item-3" class="mb-5 pt-2">
-                            <h4 class="fw-bold fs-3 mb-3">UI Design</h4>
+                                <!-- Top Specialties Section -->
+                                <div class="col-12">
+                                    <div class="info-border-left">
+                                        <span class="specialty-label">Top Specialties</span>
+                                        <ul class="list-unstyled fs-5 fw-light text-secondary">
+                                            <li class="mb-2">Web Design</li>
+                                            <li class="mb-2">Product Design</li>
+                                            <li>Brand / Graphic Design</li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-                            <div class="container-fluid px-0">
-                                <div class="row g-4">
-                                    <!-- Card 1 -->
-                                    {% for i in uidesign %}
-
-
-                                    <div class="col-6 col-md-3">
-                                        <a href="{% url 'uidesign' i.id %}">
-                                        <div class="portfolio-card text-center">
-                                            <span class="text-white">{{i.title}}</span>
-                                            <img src="{{ i.image.url }}" alt="Logo 1" class="img-fluid">
-                                            <span class="text-white">{{i.caption}}</span>
-                                        </div>
+                                <!-- Seeking / Status Section -->
+                                <div class="col-12 mt-5">
+                                    <div class="seeking-box shadow-lg">
+                                        <span class="specialty-label text-white-50">Current
+                                            Status</span>
+                                        <h4 class="fw-bold mb-3">Seeking freelance or contract
+                                            opportunities</h4>
+                                        <a href="https://wa.me/9840031860"
+                                            class="btn btn-outline-light btn-sm px-4 py-2 mt-2">
+                                            Hire Me <i class="bi bi-arrow-up-right ms-2"></i>
                                         </a>
                                     </div>
-                                    {% endfor %}
-
                                 </div>
+
                             </div>
-                        </div>
-
-                        <hr class="my-5 opacity-25">
-
-                        <div id="item-4" class="mb-5 pt-2">
-                            <h4 class="fw-bold fs-3 mb-3">Logo Design</h4>
-                            <div class="container-fluid px-0">
-                                <div class="row g-4">
-                                    <!-- Card 1 -->
-                                    {% for i in logo %}
-
-
-                                    <div class="col-6 col-md-3">
-
-                                        <div class="portfolio-card text-center">
-                                            <span class="text-white">{{i.title}}</span>
-                                            <img src="{{ i.image.url }}" alt="Logo 1" class="img-fluid">
-                                            <span class="text-white">{{i.caption}}</span>
-                                        </div>
-                                    </div>
-                                    {% endfor %}
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <hr class="my-5 opacity-25">
-
-                        <div id="item-5" class="mb-5 pt-2">
-                            <h4 class="fw-bold fs-3 mb-3">Poster & Visual Design</h4>
-                            <p class="text-muted">Print media guidelines, digital illustrations, and artistic visual
-                                layouts...</p>
                         </div>
 
                     </div>
                 </div>
+            </section>
+            <!-- HOME SECTION END -->
 
+        </div>
+
+        <hr class="my-5 opacity-25">
+
+        <div id="item-2" class="mb-5 pt-2">
+            <h4 class="fw-bold fs-3 mb-3">Projects</h4>
+           
+            <!-- PROJECT SECTION START -->
+            <div class="container-fluid px-0">
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    {% for i in project %}
+
+                    <div class="col-6 col-md-3">
+                        <a href="{% url 'project' i.id %}">
+
+                            <div class="portfolio-card text-center">
+                                <span class="text-secondary">{{i.title}}</span>
+                                <img src="{{ i.image.url }}" alt="Logo 1" class="img-fluid">
+                                <span class="text-secondary">{{i.caption}}</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    {% endfor %}
+
+                </div>
+            </div>
+
+            <!-- PROJECT SECTION END -->
+        </div>
+
+        <hr class="my-5 opacity-25">
+
+        <div id="item-3" class="mb-5 pt-2">
+            <h4 class="fw-bold fs-3 mb-3">UI Design</h4>
+
+            <div class="container-fluid px-0">
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    {% for i in uidesign %}
+
+
+                    <div class="col-6 col-md-3">
+                        <a href="{% url 'uidesign' i.id %}">
+                            <div class="portfolio-card text-center">
+                                <span class="text-secondary">{{i.title}}</span>
+                                <img src="{{ i.image.url }}" alt="Logo 1" class="img-fluid">
+                                <span class="text-secondary">{{i.caption}}</span>
+                            </div>
+                        </a>
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5 opacity-25">
+
+        <div id="item-4" class="mb-5 pt-2">
+            <h4 class="fw-bold fs-3 mb-3">Logo Design</h4>
+            <div class="container-fluid px-0">
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    {% for i in logo %}
+
+
+                    <div class="col-6 col-md-3">
+
+                        <div class="portfolio-card text-center">
+                            <span class="text-secondary">{{i.title}}</span>
+                            <img src="{{ i.image.url }}" alt="Logo 1" class="img-fluid">
+                            <span class="text-secondary">{{i.caption}}</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
             </div>
 
         </div>
+
+        <hr class="my-5 opacity-25">
+
+        <div id="item-5" class="mb-5 pt-2">
+            <h4 class="fw-bold fs-3 mb-3">Poster & Visual Design</h4>
+            <div class="container-fluid px-0">
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    {% for i in poster %}
+
+
+                    <div class="col-6 col-md-3">
+
+                        <div class="portfolio-card text-center">
+                            <span class="text-secondary">{{i.title}}</span>
+                            <img src="{{ i.image.url }}" alt="Logo 1" class="img-fluid">
+                            <span class="text-secondary">{{i.caption}}</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+
     </div>
-    <!-- MAIN SECTION END -->
+</div>
 
-    {% endblock content %}
+</div>
 
+</div>
+</div>
+<!-- MAIN SECTION END -->
 
+{% endblock content %}

@@ -39,9 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
 ]
 
 EXTERNAL_APPS= [
+    'cloudinary', 
+    'cloudinary_storage',
     'core'
 ]
 
@@ -133,6 +136,21 @@ STATICFILES_DIRS=[
 MEDIA_ROOT= os.path.join(BASE_DIR, "media")
 MEDIA_URLS="/media/"
 
+
+# cloudinary setup start
+CLOUDINARY_STORAGE = { 
+                      'CLOUD_NAME': config('CLOUD_NAME'), 
+                      'API_KEY': config('API_KEY'), 
+                      'API_SECRET': config('API_SECRET'), } 
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage' 
+
+import cloudinary 
+cloudinary.config(
+    cloud_name= config('CLOUD_NAME'),
+    api_key=config('API_KEY'), 
+    api_secret=config('API_SECRET'), 
+    secure=True 
+    )
 
 # django admin integration with Jazzmine
 
