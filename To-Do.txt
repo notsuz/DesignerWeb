@@ -3,7 +3,8 @@ models implemented -----------> done
 projects listing dynamic -----> done 
 project pages created --------> done
 admin panel custumization ----> done
+cloudanary implementation ----> done
+hosting-----------------------> left
+db migration------------------> light weight so not needed
 
-cloudanary implementation ----> to-do (will setup from clients account)
-
-will gather requirements again --> to-do
+will ask if any other things are required
